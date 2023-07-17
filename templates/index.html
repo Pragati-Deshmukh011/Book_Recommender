@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender system</title>
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
+</head>
+<style>
+    .text-white{
+    color: white
+    }
+    .nav-link:hover {
+        color: #e3f2fd;
+    }
+</style>
+<body style="background-color:black">
+ <nav class="navbar  navbar-expand-lg navbar-dark style=background-color: #e3f2fd py-5;">
+  <div class="container-fluid py-3">
+      <a class="navbar-brand" href="#"><strong> Book Recommender</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/recommend">Recommend</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+ </nav>
+
+     <div class = "container">
+         <div class = "row">
+             <div class="col-md-12">
+                 <h1 class="text-white" > Readers choice</h1>
+             </div>
+             {% for i in range(book_name|length) %}
+             <div class="col-md-3 ">
+                 <div class=" card ">
+                   <div class = "card-body" style="margin-top:50px " >
+                     <img class="card-img-top " src="{{ image[i] }}">
+                     <h5 class="text-black">{{ book_name[i] }}</h5>
+                     <h5 class="text-black" > {{ author[i] }} </h5>
+                     <h6 class="text-black"> votes {{ votes[i] }}</h6>
+                     <h6 class="text-black">Rating {{ rating[i] }}</h6>
+                   </div>
+                 </div>
+             </div>
+                  {% endfor %}
+
+         </div>
+
+
+         </div>
+
+     </div>
+
+</body>
+</html>
