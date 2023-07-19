@@ -15,8 +15,11 @@ The "Book Recommender System" project is a web application created with the Flas
    
 # Dataset Description
 we have 3 files in our dataset which is extracted from some books selling websites.
+
 •	Books – first are about books which contain all the information related to books like an author, title, publication year, etc.
+
 •	Users – The second file contains registered user’s information like user id, location.
+
 •	ratings –  Ratings contain information like which user has given how much rating to which book.
 
 # Check Video
