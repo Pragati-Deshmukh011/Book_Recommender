@@ -24,3 +24,8 @@ we have 3 files in our dataset which is extracted from some books selling websit
 
 # Check Video
  https://github.com/Pro-18/Book_Recommender/assets/92087279/b05e5acc-9cb5-4801-84f5-745de78342d6
+
+ #ppt Presentation
+
+ https://docs.google.com/presentation/d/1iKijTA9PlRZQjsSRl282CPVR9EVqjq-7K261eyTBra8/edit?usp=sharing
+ 
